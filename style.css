@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&family=Tomorrow&display=swap');
+
+body {
+  margin: 0; padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+
+section {
+  padding-top: 60px;
+}
+
+section#portfolio, section#contact {
+  padding-bottom: 60px;
+}
+
+section#portfolio{
+  padding-left: 73px;
+  padding-right: 73px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'DM Serif Display', serif;
+}
+
+section#portfolio h1{
+  margin-bottom: 1.5rem;
+}
+
+.hero .carousel-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0) !important;
+  padding-top: 10px;
+  margin-top: 2rem;
+}
+
+#navbarNav {
+  position: absolute;
+  right: 0;
+  padding-right: 50px;
+}
+
+.navbar .navbar-toggler {
+  border-width : 0;
+}
+
+.navbar .icon {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255,255,255,.55);
+
+}
+
+.row .grid-content {
+  display: grid;
+  grid-template-rows: 1fr 0.1fr;
+}
+
+
+#design-block {
+  font-weight: 900;
+  font-size: 14px;
+  border: 1px solid black;
+  padding: 5px;
+  width: 70px;
+  color: black;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.auto-content {
+  margin-top: auto;
+  font-family: 'Tomorrow', sans-serif;
+}
+
+.wrapper {
+  background-color: #EDEDED;
+  padding: 40px;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: start;
+}
+
+.wrapper button {
+  background-color: black !important;
+  border-radius: 0px !important;
+  float: right;
+}
+
+.form-control {
+  border-radius: 0px !important;
+}
+
+.form-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2;
+}
+
+section#footer {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+#footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#footer-wrapper p {
+  max-width: 500px;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.footer-nav .col-sm-6 {
+  align-items: stretch;
+  justify-items: stretch;
+  font-size: 9px;
+  margin-top: 20px;
+}
+
+#footer-wrapper a {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.footer-menu {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.txt-type > .txt {
+  border-right: 0.1rem solid rgb(63, 63, 63);
+}
+
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 20px;
+  }
+
+  section#about {
+    padding-top: 20px;
+  }
+
+  section#portfolio {
+    padding: 0 0 20px;
+  }
+
+  .navbar {
+    padding: 0 20px;
+    padding-top: 20px;
+  }
+
+  #navbarNav {
+    padding-right: 15px;
+  }
+
+  #navbarNav {
+    position: relative;
+    text-align: left;
+  }
+
+  .social {
+    margin: 5px 0 -5px;
+  }
+
+  .wrapper {
+    padding: 20px;
+  }
+
+  .wrapper p {
+
+    margin-top: 10px;
+  }
+
+  .wrapper button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .order-reverse {
+    order: 2;
+  }
+
+  .footer-nav p {
+    text-align: center;
+  }
+
+  .footer-menu {
+    justify-content: center;
+    margin-right: 40px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero .carousel-item {
+    height: 50vh;
+  }
+}

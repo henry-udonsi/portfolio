@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&family=Tomorrow&display=swap');
+
+body {
+  margin: 0; padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  font-size: 1rem;
+  background-color: rgb(245, 244, 244);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'DM Serif Display', serif;
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+.navbar {
+  background-color: rgb(245, 244, 244) !important;
+  margin-top: 2rem;
+  }
+
+.navbar-nav {
+    position: absolute;
+    right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(71, 71, 71, 0.733) !important;
+}
+
+.navbar .icon {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-light .navbar-toggler {
+  border: 0
+}
+
+section#hero img {
+  padding-bottom: 4vw;
+}
+
+section#hero h1 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+section#hero p {
+  line-height: 2;
+}
+
+
+section#images img {
+  padding: 4vw 0;
+}
+
+.subtext {
+  text-transform: uppercase;
+  font-size: 0.8333333333333334rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+
+section#related-works img{
+  padding-top: 2vw;
+  padding-bottom: 4vw;
+}
+
+section#related-works h1{
+  margin: 0;
+}
+
+
+section#footer {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+#footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#footer-wrapper p {
+  max-width: 500px;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.footer-nav .col-sm-6 {
+  align-items: stretch;
+  justify-items: stretch;
+  font-size: 9px;
+  margin-top: 20px;
+}
+
+#footer-wrapper a {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.footer-menu {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-nav {
+    position: relative;
+  }
+
+  section#related-works img{
+    padding: 4vw 0;
+  }
+
+  .order-reverse {
+    order: 2;
+  }
+
+  .footer-nav p {
+    text-align: center;
+  }
+
+  .footer-menu {
+    justify-content: center;
+    margin-right: 40px;
+    margin-top: 5px;
+  }
+}
